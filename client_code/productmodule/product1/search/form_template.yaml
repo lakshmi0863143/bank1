@@ -1,0 +1,36 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{"GNDVAJ":55,"PXTJZD":5}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: TextBox
+    properties: {}
+    name: text_box_1
+    layout_properties: {grid_position: 'RODEEJ,GNDVAJ'}
+    event_bindings: {pressed_enter: text_box_1_pressed_enter}
+  - type: Button
+    properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: search, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:search'}
+    name: button_1
+    layout_properties: {grid_position: 'RODEEJ,PXTJZD'}
+    event_bindings: {click: button_1_click}
+- type: DataGrid
+  properties:
+    columns:
+    - {id: HORKWG, title: Column 1, data_key: column_1}
+    - {id: JOKIUL, title: Column 2, data_key: column_2}
+    - {id: XDHTHH, title: Column 3, data_key: column_3}
+  name: data_grid_1
+  layout_properties: {slot: default}
+  components:
+  - type: RepeatingPanel
+    properties: {spacing_above: none, spacing_below: none, item_template: productmodule.product1.search.RowTemplate1}
+    name: repeating_panel_1
+    layout_properties: {}

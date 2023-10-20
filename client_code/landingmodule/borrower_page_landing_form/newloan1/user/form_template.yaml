@@ -1,0 +1,165 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: Link
+    properties: {role: null, url: '', align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: Home, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: medium, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: '', bold: true, underline: false, icon: 'fa:home'}
+    name: link_2
+    layout_properties: {grid_position: 'YYZIKE,KEGBQX'}
+    event_bindings: {click: link_2_click}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '#f70844',
+    visible: true, text: Tell us about your basic details and loan requirements, font_size: null,
+    font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+    background: '', bold: true, underline: false, icon: ''}
+  name: label_1
+  layout_properties: {slot: default}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Type of loan you like to avail, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: label_2
+  layout_properties: {slot: default}
+- type: Link
+  properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: New Loan, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+    spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: 'fa:bullseye'}
+  name: link_1
+  layout_properties: {slot: default}
+  event_bindings: {click: link_1_click}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'What is your residential status ?', font_size: null, font: '', spacing_above: medium,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: label_3
+  layout_properties: {slot: default}
+- type: FlowPanel
+  properties: {}
+  name: flow_panel_1
+  layout_properties: {slot: default}
+  components:
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Resident Indian (RI),
+      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, group_name: radioGroup1, underline: false}
+    name: radio_button_1
+    layout_properties: {}
+    event_bindings: {clicked: radio_button_1_clicked}
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Non Resident Indian (NRI),
+      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, group_name: radioGroup1, underline: false}
+    name: radio_button_2
+    layout_properties: {}
+    event_bindings: {clicked: radio_button_2_clicked}
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Overseas Citizen Of India (OCI),
+      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, group_name: radioGroup1, underline: false}
+    name: radio_button_3
+    layout_properties: {}
+    event_bindings: {clicked: radio_button_3_clicked}
+- type: FlowPanel
+  properties: {}
+  name: flow_panel_2
+  layout_properties: {slot: default}
+  components:
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: true, tooltip: '', placeholder: First Name,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_1
+    layout_properties: {}
+    event_bindings: {pressed_enter: text_box_1_pressed_enter}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: true, tooltip: '', placeholder: Middle Name,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_2
+    layout_properties: {}
+    event_bindings: {pressed_enter: text_box_2_pressed_enter}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: true, tooltip: '', placeholder: Last Name,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_3
+    layout_properties: {}
+    event_bindings: {pressed_enter: text_box_3_pressed_enter}
+- type: FlowPanel
+  properties: {}
+  name: flow_panel_3
+  layout_properties: {slot: default}
+  components:
+  - type: DatePicker
+    properties: {role: null, align: left, max_date: '', pick_time: true, tooltip: '',
+      placeholder: Date of Birth, border: '', enabled: true, foreground: '', visible: true,
+      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+      date: '', min_date: '', background: '', bold: false, underline: false, format: ''}
+    name: date_picker_1
+    layout_properties: {width: 201}
+    event_bindings: {change: date_picker_1_change}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Mobile Num,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_4
+    layout_properties: {}
+    event_bindings: {pressed_enter: text_box_4_pressed_enter}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Customer Location,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_5
+    layout_properties: {}
+    event_bindings: {pressed_enter: text_box_5_pressed_enter}
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: Product type
+    border: ''
+    enabled: true
+    foreground: ''
+    items: [Home Loan, Loan Against Property, Land Loan]
+    visible: false
+    font_size: null
+    font: ''
+    spacing_above: medium
+    spacing_below: small
+    italic: false
+    background: ''
+    bold: false
+    underline: false
+    include_placeholder: true
+  name: drop_down_1
+  layout_properties: {slot: default}
+  event_bindings: {change: drop_down_1_change}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: proceed, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#4b05f0',
+    bold: false, underline: false, icon: ''}
+  name: button_1
+  layout_properties: {slot: default}
+  event_bindings: {click: button_1_click}

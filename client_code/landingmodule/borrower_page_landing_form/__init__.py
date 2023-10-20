@@ -31,7 +31,7 @@ class borrower_page_landing_form(borrower_page_landing_formTemplate):
 
   def link_1_copy_3_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form('landingmodule.Services')
+    open_form('landingmodule.borrower_page_landing_form.newloan1')
 
   def link_1_copy_4_click(self, **event_args):
     """This method is called when the link is clicked"""

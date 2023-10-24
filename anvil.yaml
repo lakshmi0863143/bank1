@@ -14,7 +14,7 @@ services:
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: landingmodule.borrower_page_landing_form.newloan1}
+startup: {type: form, module: landingmodule.openform}
 package_name: Bank
 allow_embedding: false
 name: Loan app of kotak

@@ -31,6 +31,7 @@ unique_ids:
     landingmodule.Home.lendorform: '1697599695907756808005757.3539'
     landingmodule.borrower_page_landing_form.Intrest_rate: '1697799614797686105695754.3789'
     landingmodule.borrower_page_landing_form.newloan1.user.make_payment: '1697803060325455376989817.8506'
+    landingmodule.borrower_page_landing_form.view_profile: '1698214124225173908605186.67627'
     landingmodule.borrower_page_landing_form.newloan1: '169780137648485574041988.50693'
   modules:
     ROI: '1697609184008405013048147.86066'

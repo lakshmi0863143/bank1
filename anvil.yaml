@@ -24,7 +24,7 @@ metadata: {title: BankUserpage, logo_img: 'asset:kotackpng.png'}
 startup_form: null
 db_schema:
   users:
-    client: none
+    client: full
     server: full
     columns:
     - name: name

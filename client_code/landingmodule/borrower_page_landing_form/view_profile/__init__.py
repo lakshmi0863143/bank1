@@ -31,6 +31,7 @@ class view_profile(view_profileTemplate):
       self.mobile_no.append(row['mobile_no'])
       self.mail_id.append(row['mail_id'])
       self.pincode.append(row['pincode'])
+      
     
     self.label_3.text = self.user_id[-1]
     self.label_5.text = self.name[-1]

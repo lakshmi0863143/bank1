@@ -4,6 +4,77 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - type: XYPanel
+    properties: {height: 329}
+    name: xy_panel_1
+    layout_properties: {grid_position: 'UXWGSR,GWJHBC'}
+    components:
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: Business Loan, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_1
+      layout_properties: {x: 10, y: 10, width: 736}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Onetime Payment (Generally 30 days duration), font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_2
+      layout_properties: {x: 10, y: 54, width: 337}
+    - type: DropDown
+      properties: {}
+      name: drop_down_1
+      layout_properties: {x: 404, y: 54.0125, width: 342}
+      event_bindings: {change: drop_down_1_change}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: ' 3 Months EMI', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_3
+      layout_properties: {x: 10, y: 119, width: 374}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 6 Months EMI, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_5
+      layout_properties: {x: 10, y: 176, width: 374}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '4569',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_1
+      layout_properties: {x: 404, y: 119, width: 290.79999999999995}
+      event_bindings: {pressed_enter: text_box_1_pressed_enter}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '9632',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_2
+      layout_properties: {x: 404, y: 176.40000915527344, width: 290.79999999999995}
+      event_bindings: {pressed_enter: text_box_2_pressed_enter}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '#16feb0',
+        bold: false, underline: false, icon: 'fa:backward'}
+      name: button_2
+      layout_properties: {x: 37, y: 241, width: 310}
+      event_bindings: {click: button_2_click}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '#16feb0',
+        bold: false, underline: false, icon: ''}
+      name: button_1
+      layout_properties: {x: 404, y: 241, width: 292}
+      event_bindings: {click: button_1_click}

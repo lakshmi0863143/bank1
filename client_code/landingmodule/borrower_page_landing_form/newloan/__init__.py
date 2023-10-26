@@ -75,6 +75,17 @@ class newloan(newloanTemplate):
     """This method is called when an item is selected"""
     tenure = self.drop_down_3.selected_value
 
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('landingmodule.borrower_page_landing_form')
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('landingmodule.borrower_page_landing_form.newloan.loantype')
+
+    
+
+
 
 
 

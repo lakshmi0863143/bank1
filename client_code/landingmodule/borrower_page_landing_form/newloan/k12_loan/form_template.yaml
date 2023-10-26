@@ -1,7 +1,8 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
+    role: null, html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
   properties: {col_widths: '{}'}
@@ -28,9 +29,13 @@ components:
       name: label_2
       layout_properties: {x: 10, y: 63, width: 352.20001220703125}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Fee,
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_1
-      layout_properties: {x: 372.20000000000005, y: 63, width: 381}
+      layout_properties: {x: 372.20001220703125, y: 63, width: 355.4}
+      event_bindings: {pressed_enter: text_box_1_pressed_enter}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Transportation Fee (Optional), font_size: null, font: '',
@@ -39,6 +44,41 @@ components:
       name: label_3
       layout_properties: {x: 10, y: 118, width: 352.2}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Fee,
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_2
-      layout_properties: {x: 372.2, y: 118, width: 381}
+      layout_properties: {x: 372.20001220703125, y: 118, width: 355.4}
+      event_bindings: {pressed_enter: text_box_2_pressed_enter}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Fees Due date, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_4
+      layout_properties: {x: 10, y: 173, width: 352.2}
+    - type: DatePicker
+      properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
+        placeholder: Due date, border: '', enabled: true, foreground: '', visible: true,
+        font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+        date: '', min_date: '', background: '', bold: false, underline: false, format: ''}
+      name: date_picker_1
+      layout_properties: {x: 372.20001220703125, y: 173, width: 355.4}
+      event_bindings: {change: date_picker_1_change}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '#16feb0',
+        bold: false, underline: false, icon: 'fa:backward'}
+      name: button_2
+      layout_properties: {x: -18.787500381469727, y: 264.20001220703125, width: 351}
+      event_bindings: {click: button_2_click}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '#16feb0',
+        bold: false, underline: false, icon: ''}
+      name: button_1
+      layout_properties: {x: 398, y: 264.20001220703125, width: 347}
+      event_bindings: {click: button_1_click}

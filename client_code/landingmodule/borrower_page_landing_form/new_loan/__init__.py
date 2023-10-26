@@ -59,6 +59,33 @@ class new_loan(new_loanTemplate):
     """This method is called when an item is selected"""
     min_amount = self.drop_down_1.selected_value
 
+  def drop_down_2_change(self, **event_args):
+    """This method is called when an item is selected"""
+    max_amount = self.drop_down_2.selected_value
+
+  def drop_down_3_change(self, **event_args):
+    """This method is called when an item is selected"""
+    tenure = self.drop_down_3.selected_value
+
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('landingmodule.borrower_page_landing_form.new_loan.k12_loan')
+
+  def link_3_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('landingmodule.borrower_page_landing_form.new_loan.business_loan')
+    
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    Notification('Enter all fields').show()
+    
+    
+
+
+
+
+
+
 
 
 

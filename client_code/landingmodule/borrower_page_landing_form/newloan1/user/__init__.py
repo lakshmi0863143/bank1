@@ -15,25 +15,29 @@ class user(userTemplate):
 
     # Any code you write here will run before the form opens.
 
-  def link_2_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    open_form('landingmodule.borrower_page_landing_form')
-
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form('landingmodule.borrower_page_landing_form.newloan1.user.check_offer')
+    open_form('landingmodule.borrower_page_landing_form.newloan1')
+
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('landingmodule.borrower_page_landing_form.newloan1.user.new_loan')
+
+  def link_3_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('landingmodule.borrower_page_landing_form.newloan1.user.nexisting_loan')
 
   def radio_button_1_clicked(self, **event_args):
     """This method is called when this radio button is selected"""
-    resident = self.resident.selected_value
+    ri = self.radio_button_1.selected
 
   def radio_button_2_clicked(self, **event_args):
     """This method is called when this radio button is selected"""
-    nresident = self.nresident.selected_value
+    nri = self.radio_button_2.selected
 
   def radio_button_3_clicked(self, **event_args):
     """This method is called when this radio button is selected"""
-    overcitizen = self.overcitizen.selected_value
+    oci = self.radio_button_3.selected
 
   def text_box_1_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
@@ -57,13 +61,7 @@ class user(userTemplate):
 
   def text_box_5_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
-    location = self.text_box_5.text
-
-  def drop_down_1_change(self, **event_args):
-    """This method is called when an item is selected"""
-    product = self.product.selected_value
-
- 
+    clocation = self.text_box_5.text
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -78,7 +76,11 @@ class user(userTemplate):
 
 
 
+   
 
 
 
 
+
+
+ 

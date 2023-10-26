@@ -1,0 +1,44 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: XYPanel
+    properties: {height: 446}
+    name: xy_panel_1
+    layout_properties: {grid_position: 'NYVMQG,EZBHCF'}
+    components:
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: K_12 Education Loan, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_1
+      layout_properties: {x: 10, y: 10, width: 735}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: School Term fees / Annual Fees, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_2
+      layout_properties: {x: 10, y: 63, width: 352.20001220703125}
+    - type: TextBox
+      properties: {}
+      name: text_box_1
+      layout_properties: {x: 372.20000000000005, y: 63, width: 381}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Transportation Fee (Optional), font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_3
+      layout_properties: {x: 10, y: 118, width: 352.2}
+    - type: TextBox
+      properties: {}
+      name: text_box_2
+      layout_properties: {x: 372.2, y: 118, width: 381}

@@ -32,6 +32,11 @@ class loantype(loantypeTemplate):
     alert('submitted succesfull')
     open_form('landingmodule.borrower_page_landing_form')
 
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('landingmodule.borrower_page_landing_form.newloan')
+
+
 
 
 

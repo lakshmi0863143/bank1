@@ -21,7 +21,7 @@ class business_loan(business_loanTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    alert('submited sucessfullly')
+    alert('submitted successfully')
     open_form('landingmodule.borrower_page_landing_form.newloan.loantype')
 
   def text_box_1_pressed_enter(self, **event_args):

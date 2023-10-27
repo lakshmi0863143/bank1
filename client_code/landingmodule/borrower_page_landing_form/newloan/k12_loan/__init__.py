@@ -17,7 +17,7 @@ class k12_loan(k12_loanTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    alert('Details Submitted')
+    alert('submitted successfully')
     open_form('landingmodule.borrower_page_landing_form.newloan.loantype')
 
   def button_2_click(self, **event_args):

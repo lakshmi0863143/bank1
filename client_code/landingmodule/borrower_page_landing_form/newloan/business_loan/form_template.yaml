@@ -28,9 +28,28 @@ components:
       name: label_2
       layout_properties: {x: 10, y: 54, width: 337}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [1-10-2023, 8-10-2023, 15-10-2023, 22-10-2023, 29-10-2023, 6-11-2023,
+          '']
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: true
       name: drop_down_1
-      layout_properties: {x: 404, y: 54.0125, width: 342}
+      layout_properties: {x: 404.000018119812, y: 54.01250457763672, width: 342}
       event_bindings: {change: drop_down_1_change}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',

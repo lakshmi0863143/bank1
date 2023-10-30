@@ -25,7 +25,7 @@ class loantype(loantypeTemplate):
 
   def check_box_1_change(self, **event_args):
     """This method is called when this checkbox is checked or unchecked"""
-    Notification()
+    
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""

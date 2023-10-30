@@ -50,3 +50,7 @@ def search_product(query):
       or query in x['membership_type']
     ]
   return result
+
+@anvil.server.callable
+def add_loan(firstname, middlename, lastname, mobileno, location, mini_amount, max_amount, birthdate, tenure, onetime_payment, emi, memi, school, transport, due_date):
+   app_tables.product.add_row(firstname=firstname, middlename=middlename, lastname=lastname, mobileno=mobileno, location=location, mini_amount=mini_amount, max_amount=max_amount, birthdate=birthdate, tenure=tenure, onetime_payment=onetime_payment, emi=emi, memi=memi, school=school, transport=transport, due_date=due_date)

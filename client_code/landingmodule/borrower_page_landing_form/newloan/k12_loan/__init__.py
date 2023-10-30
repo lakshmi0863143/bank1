@@ -36,7 +36,7 @@ class k12_loan(k12_loanTemplate):
     """This method is called when the selected date changes"""
     duedate = self.date_picker_1.date 
 
-
+    anvil.server.call('add_loan',school,transport,duedate)
 
 
 

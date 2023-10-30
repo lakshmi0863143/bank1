@@ -36,6 +36,8 @@ components:
       name: text_box_1
       layout_properties: {x: 372.20001220703125, y: 63, width: 355.4}
       event_bindings: {pressed_enter: text_box_1_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''school'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Transportation Fee (Optional), font_size: null, font: '',
@@ -51,6 +53,8 @@ components:
       name: text_box_2
       layout_properties: {x: 372.20001220703125, y: 118, width: 355.4}
       event_bindings: {pressed_enter: text_box_2_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''transport'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Fees Due date, font_size: null, font: '', spacing_above: small,
@@ -66,6 +70,8 @@ components:
       name: date_picker_1
       layout_properties: {x: 372.20001220703125, y: 173, width: 355.4}
       event_bindings: {change: date_picker_1_change}
+      data_bindings:
+      - {property: date, code: 'self.item[''duedate'']', writeback: true}
     - type: Button
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,

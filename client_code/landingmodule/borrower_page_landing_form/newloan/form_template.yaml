@@ -68,6 +68,8 @@ components:
       name: text_box_1
       layout_properties: {x: 15.199999809265137, y: 198, width: 192.20000000000002}
       event_bindings: {pressed_enter: text_box_1_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''firstname'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Middle Name,
         border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
@@ -76,6 +78,8 @@ components:
       name: text_box_2
       layout_properties: {x: 243, y: 198, width: 209.4}
       event_bindings: {pressed_enter: text_box_2_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''middlename'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Last Name,
         border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
@@ -84,6 +88,8 @@ components:
       name: text_box_3
       layout_properties: {x: 495, y: 198, width: 221.4}
       event_bindings: {pressed_enter: text_box_3_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''lastname'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Mobile No,
         border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
@@ -92,6 +98,8 @@ components:
       name: text_box_4
       layout_properties: {x: 243, y: 252, width: 209.4}
       event_bindings: {pressed_enter: text_box_4_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''mobileno'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Location,
         border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
@@ -100,6 +108,8 @@ components:
       name: text_box_5
       layout_properties: {x: 495, y: 252, width: 221.4}
       event_bindings: {pressed_enter: text_box_5_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''location'']', writeback: true}
     - type: DatePicker
       properties: {role: null, align: left, max_date: '', pick_time: true, tooltip: '',
         placeholder: Date of Birth, border: '', enabled: true, foreground: '', visible: true,
@@ -108,6 +118,8 @@ components:
       name: date_picker_1
       layout_properties: {x: 14.199999809265137, y: 252, width: 218.8}
       event_bindings: {change: date_picker_1_change}
+      data_bindings:
+      - {property: date, code: 'self.item[''birthdate'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Minimum Amount, font_size: null, font: '', spacing_above: small,
@@ -140,6 +152,8 @@ components:
       name: drop_down_1
       layout_properties: {x: 373.20001220703125, y: 338.6000061035156, width: 368.788}
       event_bindings: {change: drop_down_1_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''miniamount'']', writeback: true}
     - type: DropDown
       properties:
         role: null
@@ -166,6 +180,8 @@ components:
       name: drop_down_2
       layout_properties: {x: 373.20001220703125, y: 389.6000061035156, width: 368.788}
       event_bindings: {change: drop_down_2_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''maxamount'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Maximum Amount, font_size: null, font: '', spacing_above: small,
@@ -203,6 +219,9 @@ components:
       name: drop_down_3
       layout_properties: {x: 373.20001220703125, y: 439.6000061035156, width: 368.788}
       event_bindings: {change: drop_down_3_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item['''']', writeback: true}
+      - {property: selected_value, code: 'self.item[''tenure'']', writeback: true}
     - type: Button
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,

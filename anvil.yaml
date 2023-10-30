@@ -152,7 +152,7 @@ db_schema:
       type: string
     title: membership
   loan:
-    client: none
+    client: full
     server: full
     columns:
     - name: 'firstname '

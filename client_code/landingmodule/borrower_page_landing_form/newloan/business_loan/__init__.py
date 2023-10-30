@@ -35,7 +35,8 @@ class business_loan(business_loanTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('landingmodule.borrower_page_landing_form.newloan.loantype')
-
+    
+    anvil.server.call('add_loan',onetimepayment,emi,memi)
 
 
 

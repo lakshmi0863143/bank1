@@ -51,3 +51,18 @@ def search_product(query):
     ]
   return result
 
+@anvil.server.callable
+def add_loan(firstname, middlename, lastname, mobileno, location, miniamount, maxamount, birthdate, tenure, onetimepayment, emi, memi, school, transport, duedate):
+   app_tables.loan.add_row(firstname=firstname,
+                           middlename=middlename, 
+                           lastname=lastname, 
+                           mobileno=mobileno, 
+                           location=location, 
+                           miniamount=miniamount, 
+                           maxamount=maxamount, 
+                           birthdate=birthdate, 
+                           tenure=tenure, 
+                           onetime_payment=onetime_payment, 
+                           emi=emi, memi=memi, school=school, 
+                           transport=transport, 
+                           duedate=duedate)

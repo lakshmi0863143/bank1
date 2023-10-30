@@ -83,6 +83,7 @@ class newloan(newloanTemplate):
     """This method is called when the button is clicked"""
     open_form('landingmodule.borrower_page_landing_form.newloan.loantype')
     
+    anvil.server.call('add_loan',firstname,middlename,lastname,mobileno,location,maxamount,miniamount,birthdate,tenure)
 
 
 

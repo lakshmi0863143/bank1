@@ -205,17 +205,17 @@ components:
       event_bindings: {change: drop_down_3_change}
     - type: Button
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: Next, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '#16feb0',
-        bold: true, underline: false, icon: ''}
-      name: button_1
-      layout_properties: {x: 468, y: 512.7999877929688, width: 230}
-      event_bindings: {click: button_1_click}
-    - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '#16feb0',
         bold: false, underline: false, icon: 'fa:backward'}
       name: button_2
       layout_properties: {x: 77, y: 518.4000244140625, width: 204}
       event_bindings: {click: button_2_click}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: Next, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '#16feb0',
+        bold: true, underline: false, icon: 'fa:forward'}
+      name: button_1
+      layout_properties: {x: 462.3999938964844, y: 518.4000244140625, width: 230}
+      event_bindings: {click: button_1_click}

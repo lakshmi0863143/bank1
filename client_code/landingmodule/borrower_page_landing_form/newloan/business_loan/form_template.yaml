@@ -93,7 +93,7 @@ components:
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '#16feb0',
-        bold: false, underline: false, icon: ''}
+        bold: false, underline: false, icon: 'fa:certificate'}
       name: button_1
       layout_properties: {x: 404, y: 241, width: 292}
       event_bindings: {click: button_1_click}

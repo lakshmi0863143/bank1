@@ -151,3 +151,50 @@ db_schema:
       admin_ui: {width: 200, order: 1}
       type: string
     title: membership
+  loan:
+    client: none
+    server: full
+    columns:
+    - name: 'firstname '
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: 'middlename '
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: 'lastname '
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: mobileno
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: location
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: mini_amount
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: max_amount
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: birthdate
+      admin_ui: {width: 200, order: 8}
+      type: date
+    - name: tenure
+      admin_ui: {width: 200, order: 9}
+      type: string
+    - name: onetime_payment
+      admin_ui: {width: 200, order: 10}
+      type: string
+    - name: emi
+      admin_ui: {width: 200, order: 11}
+      type: string
+    - name: memi
+      admin_ui: {width: 200, order: 12}
+      type: string
+    - name: school
+      admin_ui: {width: 200, order: 13}
+      type: string
+    - name: transport
+      admin_ui: {width: 200, order: 14}
+      type: string
+    title: loan

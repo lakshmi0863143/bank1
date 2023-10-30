@@ -65,11 +65,11 @@ class newloan(newloanTemplate):
 
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
-    mini_amount = self.drop_down_1.selected_value
+    miniamount = self.drop_down_1.selected_value
 
   def drop_down_2_change(self, **event_args):
     """This method is called when an item is selected"""
-    max_amount = self.drop_down_2.selected_value
+    maxamount = self.drop_down_2.selected_value
 
   def drop_down_3_change(self, **event_args):
     """This method is called when an item is selected"""
@@ -82,7 +82,6 @@ class newloan(newloanTemplate):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('landingmodule.borrower_page_landing_form.newloan.loantype')
-    
     
 
 

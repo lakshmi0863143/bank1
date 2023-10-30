@@ -17,7 +17,7 @@ class business_loan(business_loanTemplate):
 
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
-    onetime_payment = self.drop_down_1.selected_value
+    onetimepayment = self.drop_down_1.selected_value
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""

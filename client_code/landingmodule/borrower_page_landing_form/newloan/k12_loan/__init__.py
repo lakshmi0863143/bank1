@@ -34,7 +34,7 @@ class k12_loan(k12_loanTemplate):
 
   def date_picker_1_change(self, **event_args):
     """This method is called when the selected date changes"""
-    due_date = self.date_picker_1.date 
+    duedate = self.date_picker_1.date 
 
 
 
